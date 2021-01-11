@@ -2,11 +2,13 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   header: {
-    height: 50,
     position: 'absolute',
+    top: 0,
+    zIndex: 10,
+    height: 50,
     alignSelf: 'center',
     marginTop: 40,
-    width: 300
+    width: 300,
   },
   container: {
     backgroundColor: 'transparent',
@@ -20,8 +22,7 @@ const styles = StyleSheet.create({
 
   input: {
     borderRadius: 150,
-    color: '#fff',
-
+    color: '#fff'
   }
 });
 

@@ -4,6 +4,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import Header from '../../components/Header/Header';
 import Carousel  from '../../components/Carousel/Carousel';
 import BooksCarousel from '../../components/BooksCarousel/BooksCarousel';
 import BookList from '../../components/BooksList/BooksList';
@@ -14,6 +15,7 @@ const Home = props => {
   
   return (
     <ScrollView style={styles.container}>
+      <Header />
       <View style={styles.homeTopGradient}>
         <LinearGradient
           colors={['#8785EF', '#3633CC']}
