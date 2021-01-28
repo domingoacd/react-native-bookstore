@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     width: 100,
     borderRadius: 10,
     elevation: 4,
-    backgroundColor: 'red'
+    backgroundColor: '#ACF'
   },
   textContainer: {
     flex: 1,

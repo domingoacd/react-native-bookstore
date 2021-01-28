@@ -6,12 +6,7 @@ import profileIcon from '../assets/icon-profile.png';
 import styles from './menuStyles';
 
 const MenuIcon = ({ iconImage, isFocused }) => {
-  return (
-    <Image
-      source={iconImage}
-      style={styles.icon(isFocused)}
-    />
-  );
+  return <Image source={iconImage} style={styles.icon(isFocused)} />;
 };
 
 const Menu = ({ navigator, children }) => {
@@ -22,7 +17,6 @@ const Menu = ({ navigator, children }) => {
         style: styles.container,
         tabStyle: styles.menuWrapper
       }}
-      
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           const icons = {
