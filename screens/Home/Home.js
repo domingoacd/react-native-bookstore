@@ -12,12 +12,9 @@ import { fetchBooks } from '../../actions/index';
 
 const Home = props => {
   const showTopBar = useRef(false);
-
   const [barTracker, setTracker] = useState(false);
-  const [books, setBooks] = useState([]);
-
-  const allBooks = useSelector(state => state.books);
   const dispatch = useDispatch();
+  
   const detectScrollPosition = e => {
     if (e.nativeEvent.contentOffset.y > 170) {
       showTopBar.current = true;

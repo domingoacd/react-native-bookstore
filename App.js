@@ -9,8 +9,6 @@ import rootReducer from './reducers';
 import { fetchAllBooks } from './database/api';
 import { storeFetchedBooks } from './actions';
 
-//myStore.subscribe(() => console.log(myStore.getState()));
-
 const fetchMiddleware = (store) => (next) => (action) => {
   
   if (action.type === 'FETCH_BOOKS' && store.getState().books.length === 0) {

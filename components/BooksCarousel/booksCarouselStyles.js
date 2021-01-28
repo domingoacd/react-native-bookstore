@@ -24,13 +24,12 @@ const styles = StyleSheet.create({
     elevation: 7,
     overflow: 'hidden'
   },
-  cover: (coverColor) => ({
+  cover: (cover) => ({
     flex: 1,
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'flex-end',
     padding: 10,
-    backgroundColor: coverColor
   }),
 
   bookTitle: {
